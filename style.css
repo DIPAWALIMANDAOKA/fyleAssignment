@@ -1,0 +1,121 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f6f8fa;
+}
+
+header {
+    background-color: #24292e;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+}
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.loader {
+    border: 8px solid #f3f3f3;
+    border-top: 8px solid #586069; /* GitHub's gray color */
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;
+    margin: 20px auto;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+li {
+    padding: 20px;
+    border: 1px solid #e1e4e8; /* GitHub's border color */
+    border-radius: 6px;
+    background-color: #f6f8fa;
+    box-shadow: 0 1px 0 rgba(9,30,66,.25);
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #24292e;
+    color: white;
+}
+
+#search-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#search-container label {
+    margin-right: 10px;
+    color: #586069; /* GitHub's gray color */
+}
+
+#search-container input {
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #d1d5da; /* GitHub's input border color */
+}
+
+#search-container button {
+    padding: 8px 12px;
+    font-size: 14px;
+    background-color: #2ea44f; /* GitHub's green color */
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#search-container button:hover {
+    background-color: #22863a; /* GitHub's darker green on hover */
+}
+
+#user-info {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#user-info img {
+    border-radius: 60%;
+    max-width: 100px; /* Adjust the size as needed */
+    margin-bottom: 10px; /* Add some space between the image and the user information */
+}
+
+.user-info-container {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+#user-info img {
+    border-radius: 50%;
+    max-width: 50px;
+    margin-right: 10px; /* Add some spacing between the image and text */
+}
+
+#user-info div {
+    text-align: left; /* Align the text to the left within the container */
+}
+
+#user-info h2, #user-info p {
+    margin: 0;
+}
